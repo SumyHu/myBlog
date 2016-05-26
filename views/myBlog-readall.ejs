@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="stylesheets/style.css">
+<link rel="stylesheet" href="stylesheets/myblog-readall.css">
+</head>
+<body>
+	<article class="total-article">
+
+		<header>
+			<h2><span class="glyphicon glyphicon-edit"></span><%= article.title %></h2>
+		</header>
+
+		<article>
+			<% for(var i=0; i<article.pictureArray.length; i++) { %>
+				<img src=<%= article.pictureArray[i] %>>
+			<% } %>
+			
+			<div class="article">
+				<p><%= article.content%></p>
+			</div>
+		</article>
+
+	</article>
+
+</body>
+</html>

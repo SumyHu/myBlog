@@ -1,0 +1,215 @@
+.memorial-day {
+	width: 80%; 
+	position: relative; 
+	margin: 0 10%;
+	padding: 80px 0; 
+	float: right;
+}
+
+.time-axis, .second-time-axis { 
+	height: 6px; 
+	width: 100%;
+	background: #e31e3a;
+}
+.second-time-axis {
+	display: none;
+}
+.dateview { 
+	display: block; 
+	width: 88px; 
+	position: absolute; 
+	top: -50px; 
+	left: 20px; 
+	background: url(../images/dtime.png) no-repeat; 
+	color: #FFF; 
+	height: 46px; 
+	line-height: 30px; 
+	text-align: center 
+}
+.memorial-day ul li a { 
+	display: block;
+	margin-top: 30px; 
+	font-size: 1.1rem;
+}
+.memorial-day ul li a:hover { 
+	text-decoration: underline 
+}
+.memorial-day ul li::before { 
+	content: ""; 
+	width: 14px; 
+	height: 14px; 
+	position: absolute;
+	border: 3px solid #a73c3c; 
+	border-radius: 50%; 
+	background: #f8e0d3; 
+}
+.memorial-day ul li:hover::before { 
+	background: #fe7008; 
+	border-color: #fe7008; 
+}
+.memorial-day ul li.n1 { 
+	position: absolute; 
+	top: 74px; 
+	left: 90px;
+}
+.memorial-day ul li.n2 { 
+	position: absolute; 
+	top: 74px; 
+	left: 220px; 
+}
+.memorial-day ul li.n3 { 
+	position: absolute; 
+	top: 74px; 
+	left: 590px; 
+}
+.memorial-day ul li.n4 { 
+	position: absolute; 
+	top: 74px; 
+	left: 760px 
+}
+.memorial-day ul li.n5 { 
+	position: absolute; 
+	top: 74px; 
+	left: 950px; 
+}
+
+nav {
+	width: 60%;
+	margin: 230px 20%;
+}
+nav a{
+	display: inline-block;
+	width: 32%;
+	background-color: #e99c7e;
+	opacity: 0.7;
+	font-size: 1.3rem;
+	text-align: center;
+	line-height: 50px;
+	color: #fff;
+
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+nav a:hover {
+	opacity: 1;
+}
+
+article { 
+	width: 1000px; 
+	margin: 200px auto 100px; 
+	overflow: hidden;
+	font-size: 1.1rem; 
+}
+article a { 
+	position: relative;
+	width: 250px;
+	height: 160px;
+	float: left; 
+	overflow: hidden; 
+}
+article a:nth-child(1) {
+	background: url("../images/p-01.jpg") no-repeat center;
+	background-size: 250px 160px;
+}
+article a:nth-child(2) {
+	background: url("../images/p-02.jpg") no-repeat center;
+	background-size: 250px 160px;
+}
+article a:nth-child(3) {
+	background: url("../images/p-03.jpg") no-repeat center;
+	background-size: 250px 160px;
+}
+article a:nth-child(5) {
+	background: url("../images/p-04.jpg") no-repeat center;
+	background-size: 250px 160px;
+}
+article a:nth-child(7) {
+	background: url("../images/p-05.jpg") no-repeat center;
+	background-size: 250px 160px;
+}
+article a:nth-child(8) {
+	background: url("../images/p-06.jpg") no-repeat center;
+	background-size: 250px 160px;
+}
+
+.text-title { 
+	text-align: center;
+	line-height: 24px; 
+	color: #000;
+}
+article a p { 
+	position: absolute; 
+	left: 10px; 
+	top: 10px; 
+	line-height: 24px; 
+	padding: 20px; 
+	font-weight: normal; 
+	opacity: 0; 
+	font-size: 1.1rem;
+	color: #000; 
+
+	-webkit-transform: scale(0); 
+	transform: scale(0); 
+
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s; 
+	transition: opacity 0.35s, transform 0.35s; 
+}
+article a:hover {
+	opacity: 0.6;
+}
+article a:hover p { 
+	opacity: 1; 
+	-webkit-transform: scale(1); 
+	transform: scale(1); 
+}
+
+.decoration {
+	width: 100%;
+	margin: 0 auto 200px;
+	overflow: hidden;
+}
+
+.gif { 
+	display: inline-block;
+	position: relative; 
+	width: 240px; 
+	height: 29px; 
+	bottom: 100px;
+}
+.gif li { 
+	position: absolute; 
+	top: 0;
+	width: 29px; 
+	height: 29px; 
+	border-radius: 19px; 
+
+	-webkit-transform: scale(0.3);  	 
+	-ms-transform: scale(0.3);  
+	-o-transform: scale(0.3); 
+	 
+	transform: scale(.3);  
+}
+.gif li:first-child { 
+	left: 0; 
+}
+.gif li:nth-child(2) { 
+	left: 30px; 
+}
+.gif li:nth-child(3) { 
+	left: 60px; 
+}
+.gif li:nth-child(4) { 
+	left: 90px; 
+}
+.gif li:nth-child(5) { 
+	left: 120px; 
+}
+.gif li:nth-child(6) { 
+	left: 150px; 
+}
+.gif li:nth-child(7) { 
+	left: 180px;  
+}
+.gif li:nth-child(8) { 
+	left: 210px;  
+}

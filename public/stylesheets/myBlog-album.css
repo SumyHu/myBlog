@@ -1,0 +1,173 @@
+.header {
+	padding: 0 50px;
+}
+
+.content {
+	width: 500px;
+	margin: 160px 50px 160px 0;
+	float: left;
+	overflow: hidden;
+}
+.content p {
+	line-height: 50px;
+	font-size:1.5rem;
+
+	-webkit-animation: animation_01 3s ease-in-out backwards;
+	animation: animation_01 3s ease-in-out backwards;
+
+	-wenbkit-transition: all 1s;
+	transition: all 1s;
+}
+.content p:hover {
+	-webkit-transform: translateX(20px);
+	-ms-transform: translateX(20px);
+	transform: translateX(20px);
+}
+@-webkit-keyframes animation_01 {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateX(-50px);
+		-ms-transform: translateX(-50px);
+		transform: translateX(-50px);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: translateX(0);
+		-ms-transform: translateX(0);
+		transform: translateX(0);
+	}
+}
+@keyframes animation_01 {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateX(-50px);
+		-ms-transform: translateX(-50px);
+		transform: translateX(-50px);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: translateX(0);
+		-ms-transform: translateX(0);
+		transform: translateX(0);
+	}
+}
+
+.whole-picture {
+	position: relative;
+	top: 0;
+	width: 310px;
+	height: 310px;
+	margin: 100px 0 100px 50px;
+	float: right;
+}
+.picture {
+	display: inline-block;
+	width: 150px;
+	height: 150px;
+	clear: both;
+
+	-webkit-animation: animation_picture 3s ease-in-out backwards;
+	animation: animation_picture 3s ease-in-out backwards;
+}
+.picture-top-left {
+	border-top-left-radius: 30px;
+	background: url(../images/girl.jpg) top left;
+	background-size: 300px 300px;
+}
+.picture-top-right {
+	border-top-right-radius: 30px;
+	background: url(../images/girl.jpg) top right;
+	background-size: 300px 300px;
+}
+.picture-bottom-left {
+	border-bottom-left-radius: 30px;
+	background: url(../images/girl.jpg) bottom left;
+	background-size: 300px 300px;
+}
+.picture-bottom-right {
+	border-bottom-right-radius: 30px;
+	background: url(../images/girl.jpg) bottom right;
+	background-size: 300px 300px;
+}
+
+@-webkit-keyframes animation_picture {
+	0% {
+		opacity: 0;
+		-webkit-transform: scale(0);
+		-ms-transform: scale(0);
+		transform: scale(0);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: scale(1);
+		-ms-transform: scale(1);
+		transform: scale(1);
+	}
+}
+@keyframes animation_picture {
+	0% {
+		opacity: 0;
+		-webkit-transform: scale(0);
+		-ms-transform: scale(0);
+		transform: scale(0);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: scale(1);
+		-ms-transform: scale(1);
+		transform: scale(1);
+	}
+}
+
+.main {
+	width: 800px;
+	margin: 120px auto;
+	overflow: hidden;
+}
+.album {
+	display: inline-block;
+	width: 250px;
+	height: 250px;
+	margin: 5px;
+	cursor: pointer;
+
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+
+	background-color: #fff !important;
+	background: url(../images/girl.jpg) no-repeat center center;
+	background-size: 230px 230px; 
+}
+.album:hover {
+	opacity: 0.6;
+}
+
+@media screen and (max-width: 820px) {
+	.main {
+		width: 550px;
+	}
+}
+@media screen and (max-width: 570px) {
+	.main {
+		width: 300px;
+	}
+}
+@media screen and (max-width: 500px) {
+	body {
+		width: 500px;
+	}
+}
+
+.showPictureBackground {
+	display: none;
+	position: fixed;
+	width: 100%;
+	background: rgba(0, 0, 0, .5);
+	z-index: 10;
+}
+
+.showPicture {
+	margin: 50px auto;
+	padding: 10px;
+	background: #fff;
+}

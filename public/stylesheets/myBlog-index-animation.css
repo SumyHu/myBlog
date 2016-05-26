@@ -1,0 +1,112 @@
+.time-axis { 
+	-webkit-animation: time_a 5s;
+	animation: time_a 5s; 
+}
+
+/*时间轴动画效果*/
+@-webkit-keyframes time_a /* Safari and Chrome */ { 
+ 	0% {
+		width:0;
+	}
+	25% {
+		width:25%;
+	}
+	50% {
+		width:50%;
+	}
+	100% {
+		width:100%;
+	}
+}
+
+@keyframes time_a { 
+	0% {
+		width:0;
+	}
+	25% {
+		width:25%;
+	}
+	50% {
+		width:50%;
+	}
+	100% {
+		width:100%;
+	}
+}
+
+.gif li {
+	-webkit-animation: bounce_gif 1.2s linear infinite;
+	animation: bounce_gif 1.2s linear infinite;
+}
+
+ @-webkit-keyframes bounce_gif { 
+ 	0% {
+		-webkit-transform:scale(1);
+		background-color:#e04b4b;
+	}
+	100% {
+		-webkit-transform:scale(.3);
+		background-color:#e99c7e;
+	}
+}
+
+ @keyframes bounce_gif { 
+ 	0% {
+		transform:scale(1);
+		background-color:#e04b4b;
+	}
+	100% {
+		transform:scale(.3);
+		background-color:#e99c7e;
+	}
+}
+
+.gif li:first-child {
+	-webkit-animation-delay: 0.48s;
+	animation-delay: 0.48s; 
+}
+.gif li:nth-child(2) {
+	-webkit-animation-delay: 0.6s; 
+	animation-delay: 0.6s; 
+}
+.gif li:nth-child(3) {
+	-webkit-animation-delay: 0.72s;
+	animation-delay: 0.72s; 
+}
+.gif li:nth-child(4) { 
+	-webkit-animation-delay: 0.84s;
+	animation-delay: 0.84s; 
+}
+.gif li:nth-child(5) { 
+	-webkit-animation-delay: 0.96s;
+	animation-delay: 0.96s; 
+}
+.gif li:nth-child(6) {
+	-webkit-animation-delay: 1.08s; 
+	animation-delay: 1.08s; 
+}
+.gif li:nth-child(7) { 
+	-webkit-animation-delay: 1.2s;
+	animation-delay: 1.2s; 
+}
+.gif li:nth-child(8) {
+	-webkit-animation-delay: 1.32s; 
+	animation-delay: 1.32s; 
+}
+
+@-webkit-keyframes time_a_1 { 
+ 	0% {
+		width:0;
+	}
+	100% {
+		width:20%;
+	}
+}
+
+@keyframes time_a_1 { 
+	0% {
+		width:0;
+	100% {
+		width:20%;
+	}
+}

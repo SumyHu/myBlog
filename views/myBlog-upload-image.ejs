@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<style type="text/css">
+	.logo {
+		background: url('<%= imageSrc %>') no-repeat center center;
+	}
+</style>
+
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="stylesheets/style.css">
+<link rel="stylesheet" href="stylesheets/myBlog-upload-image.css">
+</head>
+<body>
+	<header class="header">
+		<center>
+
+			<div>
+				<div class="logo">
+			</div>
+
+			<form method="post" action="" enctype="multipart/form-data">
+				<input type="file" accept="image/*" name="uploadImage" class="uploadImage">
+
+				<input type="text" name="imageSrc" class="imageSrc">
+
+				<input type="submit" value="应用" class="btn btn-success">
+				<input type="button" value="修改密码" class="btn btn-primary goToChangePassword">
+				<input type="button" value="取消" class="btn btn-warning goToIndex">
+
+				<div><a href="../myBlog-logout" class="btn btn-danger">退出当前账号</a></div>
+			</form>
+		</center>
+	</header>
+
+	<script src="javascripts/jquery.min.js"></script>
+	<script src="javascripts/comment.js"></script>
+	<script src="javascripts/myBlog-upload-image.js"></script>
+</body>
+</html>

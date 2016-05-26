@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+<link rel="stylesheet" type="text/css" href="stylesheets/myBlog-message-book.css">
+</head>
+<body>
+	<header class="header">
+		<div>
+			<p>最近访客</p>
+			<a href="" class="logo"><span>胡心怡</span></a>
+			<a href="" class="logo"><span>胡心怡</span></a>
+			<a href="" class="logo"><span>胡心怡</span></a>
+			<a href="" class="logo"><span>胡心怡</span></a>
+			<a href="" class="logo"><span>胡心怡</span></a>
+			<a href="" class="logo"><span>胡心怡</span></a>
+		</div>
+	</header>
+
+	<section class="main">
+		<form class="editMessage" method="post">
+			<textarea placeholder="写些什么..." name="message"></textarea>
+			<center>
+				<button class="post" type="submit">发表</button>
+				<button class="cancle">取消</button>
+			</center>
+		</form>
+
+		<% for(var i=messageBooks.length-1; i>=0; i--) { 
+			console.log(messageBooks[i].username) %>
+		<section class="message">
+			<header>
+				<a href="" class="logo" style="background:url(<%= messageBooks[i].userImage %>) no-repeat center center;"><span><%= messageBooks[i].username %></span></a>
+			</header>
+			<div class="content"><p><%= messageBooks[i].content %><p></div>
+			<div class="time"><time><%= messageBooks[i].date %></time></div>
+		</section>
+		<% }; %>
+
+		<section class="message">
+			<header>
+				<a href="" class="logo"><span>胡心怡</span></a>
+			</header>
+			<div class="content"><p>愿你终将成为你想成为的自己。</p></div>
+			<div class="time"><time>2015-5-20</time></div>
+		</section>
+
+	</section>
+
+	<footer>
+		<center>
+			<p>©本网站所有解释权归胡心怡所有</p>
+			<p><span>联系方式：18824167803</span><span>tel:18824167803</span></p>
+			<p><span>电子邮箱：18824167803@163.com</span><span>e-mail：18824167803@163.com</span></p>
+		</center>
+	</footer>
+</body>
+</html>

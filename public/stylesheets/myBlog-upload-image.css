@@ -1,0 +1,28 @@
+.logo {
+	margin-top: 20px;
+}
+
+input[type=file] {
+	margin: 50px auto;
+	text-align: center;
+	font-size: 2rem;
+}
+
+input[type=text] {
+	display: none;
+}
+
+.btn {
+	margin: auto 20px;
+	font-size: 2rem;
+}
+
+form div {
+	margin-top: 35px;
+}
+
+@media screen and (max-width: 380px) {
+	.btn {
+		margin: auto;
+	}
+}

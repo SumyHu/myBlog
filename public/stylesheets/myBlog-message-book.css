@@ -1,0 +1,96 @@
+.header div {
+	width: 900px;
+	margin: 120px auto;
+	font-size: 1.5rem;
+}
+.header p {
+	margin: 50px auto;
+	padding: 0 0 20px;
+	border-bottom: 2px solid #e04b4b;
+
+}
+.logo {
+	display: inline-block;
+	width: 120px;
+	height: 120px;
+	margin: auto 10px;
+	overflow: hidden;
+	border-radius: 50%;
+
+	background: url(../images/girl.jpg) no-repeat center center;
+	background-size: 120px 120px;
+}
+.logo:hover span{
+	top: 70px;
+}
+.logo span {
+	width: 120px; 
+	height: 55px; 
+	top: 120px;
+	padding-top: 10px;
+}
+
+.main {
+	width: 80%;
+	margin: 130px auto;
+}
+textarea {
+	display: block;
+	width: 60%;
+	height: 100px;
+	margin:auto 20%;
+	border: 1px solid #e04b4b;
+	border-radius: 10px;
+}
+button {
+	width: 100px;
+	height: 40px;
+	margin: 20px 10px;
+	background-color: rgba(251, 187, 139, 0.3);
+}
+
+.message {
+	margin: 20px;
+	padding: 30px;
+	overflow: hidden;
+	background-color: rgba(251, 187, 139, 0.2);
+}
+.message .logo {
+	display: inline-block;
+	float: left;
+}
+.message div {
+	width: 75%;
+	float: right;
+	text-align: left;
+	text-indent: 2.6rem;
+	font-size: 1.3rem;
+}
+.time time {
+	float: right;
+	font-size: 1rem;
+}
+
+@media screen and (max-width: 920px) {
+	.header div {
+		width: 450px;
+	}
+}
+@media screen and (max-width: 845px) {
+	.message .logo {
+		width: 20%;
+		height: 100px;
+	}
+	.message .logo span {
+		display: none;
+	}
+}
+@media screen and (max-width: 645px) {
+	.main {
+		width: 100%;
+	}
+	.message div {
+		width: 70%;
+		margin: 0;
+	}
+}

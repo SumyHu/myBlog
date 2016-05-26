@@ -1,0 +1,72 @@
+html {
+	font-size: 62.5%;
+}
+
+body {
+	overflow: hidden;
+	font-family: "微软雅黑";
+	font-size: 2.3rem;
+	background: url(../images/login-background.jpg) no-repeat;
+	background-size: 100% 850px;
+}
+
+.alert {
+	display: none;
+	top: 0;
+	width: 100%;
+	text-align: center;
+}
+
+form {
+	width: 370px;
+	height: 300px;
+	margin: 200px auto;
+}
+
+form div {
+	height: 40px;
+	clear: both;
+	line-height: 40px;
+}
+
+form label {
+	margin: 10px;
+	overflow: hidden;
+	color: #771100;
+}
+
+input[type=text], input[type=password] {
+	width: 200px;
+	height: 40px;
+	margin: 10px;
+	float: right;
+	border-radius: 8px;
+	outline: none;
+}
+
+input[type=submit], input[type=button] {
+	display: inline;
+	width: 100px;
+	margin: 20px;
+	font-family: "微软雅黑";
+	font-size: 2rem;
+	color: #fff;
+}
+
+input[type=submit] {
+	float: left;
+}
+
+input[type=button] {
+	float: right;
+}
+
+@media screen and (max-width: 365px) {
+	input[type=text], input[type=password] {
+		width: auto
+	}
+
+	input[type=submit], input[type=button] {
+		margin: auto;
+	}
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<style type="text/css">
+	.logo {
+		background: url(<%= imageSrc %>) no-repeat center center;
+	}
+</style>
+
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="stylesheets/style.css">
+<link rel="stylesheet" href="stylesheets/myblog-article.css">
+</head>
+<body>
+	<aside>
+		<header>
+			<a href="../myBlog-upload-image" class="logo"><span><%= username %></span></a>
+		</header>
+
+		<nav>
+			<a href="../myBlog-edit-article"><span class="glyphicon glyphicon-edit"></span></a>
+			<a href="">关注<span class="attentionNum">230</span></a>
+			<a href="">粉丝<span class="fansNum">100</span></a>
+		</nav>
+
+		<section class="hot-article">
+			<div class="search">
+				<input type="text" placeholder="搜索...">
+				<span class="glyphicon glyphicon-search"></span>
+			</div>
+
+			<nav>
+				<ul>
+					<li><a href="">热门文章1</a></li>
+					<li><a href="">热门文章2</a></li>
+					<li><a href="">热门文章3</a></li>
+					<li><a href="">热门文章4</a></li>
+					<li><a href="">热门文章5</a></li>
+				</ul>
+			</nav>
+		</section>
+	</aside>
+
+	<article class="total-article">
+		<section>
+			<header>
+				<h2><span class="glyphicon glyphicon-edit"></span>陌上花开，可徐徐归矣</h2>
+				<article>
+					<img src="images/text01.jpg">
+					<div class="article poem">
+						<p>（一）<br> 陌上花开蝴蝶飞，江山犹似昔人非。<br>遗民几度垂垂老，游女长歌缓缓归。</p>
+						<p>（二）<br>陌上山花无数开，路人争看翠辇来。<br>若为留得堂堂在，且更从教缓缓归。</p>
+						<p>（三）<br> 生前富贵草头露，身后风流陌上花。<br>已作迟迟君去鲁，犹教缓缓妾还家。</p>
+					</div>
+					<div class="operate">
+						<a href="" class="read-all">阅读全文</a>
+						<a href="" class="delete">删除</a>
+					</div>
+				</article>
+			</header>
+		</section>
+
+		<% for(var i=articles.length-1; i>=0; i--) { %>
+		<section>
+			<header>
+				<h2><span class="glyphicon glyphicon-edit"></span><%= articles[i].title %></h2>
+				<article>
+					<% if(articles[i].pictureArray.length>0) { %>
+						<img src=<%= articles[i].pictureArray[0] %>>
+					<% } %>
+					
+					<div class="article">
+						<p><%= articles[i].content.substring(0, 400) %></p>
+					</div>
+					<div class="operate">
+						<% var readallUrl = "../myBlog-readall?id=" + articles[i]._id + "" %>
+						<a href=<%= readallUrl %> class="read-all">阅读全文</a>
+						<% var removeUrl = "../myBlog-remove-article?id=" + articles[i]._id + "" %>
+						<a href=<%= removeUrl %> class="delete">删除</a>
+					</div>
+				</article>
+			</header>
+		</section>
+		<% } %>
+
+		<footer>
+		<center>
+			<p>©本网站所有解释权归胡心怡所有</p>
+			<p><span>联系方式：18824167803</span><span>tel:18824167803</span></p>
+			<p><span>电子邮箱：18824167803@163.com</span><span>e-mail：18824167803@163.com</span></p>
+		</center>
+	</footer>
+	</article>
+</body>
+</html>

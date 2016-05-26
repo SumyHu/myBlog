@@ -1,0 +1,37 @@
+center {
+	margin: 100px auto;
+}
+
+div {
+	margin: 20px;
+}
+
+.title{
+	font-size: 2.5rem;
+}
+
+input[type=text] {
+	width: 60%;
+}
+
+input[type=file] {
+	display: inline;
+	font-size: 2rem;
+}
+
+.removeBtn {
+	display: inline;
+	height: 25px;
+	margin: auto 20px;
+}
+
+.showPicture {
+	width: 60%;
+}
+
+textarea {
+	width: 60%;
+	height: 600px;
+	font-size: 2rem;
+	text-indent: 4rem;
+}

@@ -1,0 +1,93 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #ffefe0;
+	font-size: 62.5%;
+	color: #e04b4b;
+}
+
+.header {
+	height: 500px;
+	overflow: hidden;
+	margin: 80px 0;
+	background-color: rgba(251, 187, 139, 0.3);
+}
+
+a {
+	text-decoration: none;
+	color: #e04b4b;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #e04b4b;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	list-style-type: none;
+}
+
+button, input[type=button] {
+	border: none;
+	border-radius: 5px;
+}
+
+.logo {
+	display: block;
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	margin: 10px auto;
+	border-radius: 50%;
+	/*background: url(../images/girl.jpg) no-repeat center center;*/
+	background-size: 200px 200px;
+}
+.logo:hover span{
+	top: 140px;
+}
+.logo span {
+	display: block; 
+	width: 200px; 
+	height: 55px; 
+	position: relative;
+	top: 200px;
+	padding-top: 15px;
+	border-bottom-left-radius: 100%;
+	border-bottom-right-radius: 100%;
+	background: rgba(0, 0, 0, .5);
+	text-align: center;
+	font-size: 1.3rem; 
+	color: rgba(251, 187, 139, 1); 
+
+	-webkit-transition: top .2s ease-in-out; 
+	-moz-transition: top .2s ease-in-out; 
+	-o-transition: top .2s ease-in-out; 
+	transition: top .2s ease-in-out;
+}
+
+footer {
+	padding: 5px 0;
+	clear: both;
+	overflow: hidden;
+	font-size: 1.1rem;
+	background-color: rgba(251, 187, 139, 0.3);
+}
+footer p span {
+	padding: 0 20px;
+}
+footer p span:first-child {
+	border-right: 1px solid #e04b4b;
+}
+@media screen and (max-width: 640px) {
+	footer p:nth-child(3) span {
+		display: block;
+	}
+	footer p:nth-child(3) span:nth-child(1) {
+		border: none;
+	}
+}
+

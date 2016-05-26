@@ -1,0 +1,22 @@
+.total-article{
+	width: 80%;
+	overflow: hidden;
+	margin: 100px auto;
+	text-align: center;
+	border-bottom: 1px solid #e04b4b;
+}
+
+header h2 {
+	font-size: 2.5rem;
+}
+article img {
+	margin: 30px auto;
+}
+
+.article {
+	margin: 0 auto 30px auto;
+	font-size: 1.8rem;
+	line-height: 3rem;
+	text-indent: 3.6rem;
+	text-align: left;
+}
