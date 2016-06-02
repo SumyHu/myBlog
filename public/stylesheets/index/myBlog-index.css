@@ -20,7 +20,7 @@
 	position: absolute; 
 	top: -50px; 
 	left: 20px; 
-	background: url(../images/dtime.png) no-repeat; 
+	background: url(../../images/dtime.png) no-repeat; 
 	color: #FFF; 
 	height: 46px; 
 	line-height: 30px; 
@@ -108,27 +108,27 @@ article a {
 	overflow: hidden; 
 }
 article a:nth-child(1) {
-	background: url("../images/p-01.jpg") no-repeat center;
+	background: url("../../images/p-01.jpg") no-repeat center;
 	background-size: 250px 160px;
 }
 article a:nth-child(2) {
-	background: url("../images/p-02.jpg") no-repeat center;
+	background: url("../../images/p-02.jpg") no-repeat center;
 	background-size: 250px 160px;
 }
 article a:nth-child(3) {
-	background: url("../images/p-03.jpg") no-repeat center;
+	background: url("../../images/p-03.jpg") no-repeat center;
 	background-size: 250px 160px;
 }
 article a:nth-child(5) {
-	background: url("../images/p-04.jpg") no-repeat center;
+	background: url("../../images/p-04.jpg") no-repeat center;
 	background-size: 250px 160px;
 }
 article a:nth-child(7) {
-	background: url("../images/p-05.jpg") no-repeat center;
+	background: url("../../images/p-05.jpg") no-repeat center;
 	background-size: 250px 160px;
 }
 article a:nth-child(8) {
-	background: url("../images/p-06.jpg") no-repeat center;
+	background: url("../../images/p-06.jpg") no-repeat center;
 	background-size: 250px 160px;
 }
 

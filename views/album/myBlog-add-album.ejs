@@ -5,14 +5,14 @@
 
 <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
 <link rel="stylesheet" href="stylesheets/style.css">
-<link rel="stylesheet" href="stylesheets/myBlog-edit-article.css">
+<link rel="stylesheet" href="stylesheets/comment/myBlog-add-article-or-album.css">
 
 </head>
 <body>
 	<center>
 		<form method="post" enctype='multipart/form-data'>
 			<div class="title">
-				<p>文章标题</p>
+				<p>相册标题</p>
 				<input type="text" name="title" required="required">
 			</div>
 
@@ -22,16 +22,14 @@
 
 			<div class="showPicture"></div>
 
-			<textarea name="content"></textarea>
-
 			<div>
 				<input type="submit" class="btn btn-success" value="提交">
-				<input type="button" class="btn btn-danger goToArticle" value="取消">
+				<input type="button" class="btn btn-danger goToAlbum" value="取消">
 			</div>
 		</form>
 	</center>
 
 	<script src="javascripts/jquery.min.js"></script>
-	<script src="javascripts/myBlog-edit-article.js"></script>
+	<script src="javascripts/comment/myBlog-add-article-or-album.js"></script>
 </body>
 </html>

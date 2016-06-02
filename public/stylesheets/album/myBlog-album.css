@@ -4,13 +4,13 @@
 
 .content {
 	width: 500px;
-	margin: 160px 50px 160px 0;
+	margin: 200px 50px 160px 0;
 	float: left;
 	overflow: hidden;
 }
 .content p {
 	line-height: 50px;
-	font-size:1.5rem;
+	font-size:2.5rem;
 
 	-webkit-animation: animation_01 3s ease-in-out backwards;
 	animation: animation_01 3s ease-in-out backwards;
@@ -71,22 +71,22 @@
 }
 .picture-top-left {
 	border-top-left-radius: 30px;
-	background: url(../images/girl.jpg) top left;
+	background: url(../../images/girl.jpg) top left;
 	background-size: 300px 300px;
 }
 .picture-top-right {
 	border-top-right-radius: 30px;
-	background: url(../images/girl.jpg) top right;
+	background: url(../../images/girl.jpg) top right;
 	background-size: 300px 300px;
 }
 .picture-bottom-left {
 	border-bottom-left-radius: 30px;
-	background: url(../images/girl.jpg) bottom left;
+	background: url(../../images/girl.jpg) bottom left;
 	background-size: 300px 300px;
 }
 .picture-bottom-right {
 	border-bottom-right-radius: 30px;
-	background: url(../images/girl.jpg) bottom right;
+	background: url(../../images/girl.jpg) bottom right;
 	background-size: 300px 300px;
 }
 
@@ -124,21 +124,29 @@
 	margin: 120px auto;
 	overflow: hidden;
 }
-.album {
+.album, .add-album {
 	display: inline-block;
 	width: 250px;
 	height: 250px;
+	overflow: hidden;
 	margin: 5px;
-	cursor: pointer;
 
 	-webkit-transition: opacity 0.5s;
 	transition: opacity 0.5s;
 
 	background-color: #fff !important;
-	background: url(../images/girl.jpg) no-repeat center center;
-	background-size: 230px 230px; 
 }
-.album:hover {
+.album {
+	background: url(../../images/girl.jpg) no-repeat center center;
+	background-size: 230px 230px;
+}
+.add-album {
+	text-align: center;
+	line-height: 250px;
+	font-size: 40rem;
+	opacity: 0.4;
+}
+.album:hover, .add-album:hover {
 	opacity: 0.6;
 }
 

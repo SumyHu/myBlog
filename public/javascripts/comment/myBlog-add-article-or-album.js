@@ -79,6 +79,10 @@ var bindEvent = function() {
 	$(".goToArticle").on("click", function() {
 		window.location.href = "../myBlog-article";
 	});
+
+	$(".goToAlbum").on("click", function() {
+		window.location.href = "../myBlog-album";
+	})
 }
 
 $.imageFileVisible = function(options) {     

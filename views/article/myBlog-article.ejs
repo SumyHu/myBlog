@@ -11,7 +11,7 @@
 
 <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
 <link rel="stylesheet" href="stylesheets/style.css">
-<link rel="stylesheet" href="stylesheets/myblog-article.css">
+<link rel="stylesheet" href="stylesheets/article/myblog-article.css">
 </head>
 <body>
 	<aside>
@@ -76,7 +76,7 @@
 					</div>
 					<div class="operate">
 						<% var readallUrl = "../myBlog-readall?id=" + articles[i]._id + "" %>
-						<a href=<%= readallUrl %> class="read-all">阅读全文</a>
+						<a href=<%= readallUrl %> class="read-all" target="_blank">阅读全文</a>
 						<% var removeUrl = "../myBlog-remove-article?id=" + articles[i]._id + "" %>
 						<a href=<%= removeUrl %> class="delete">删除</a>
 					</div>

@@ -33,7 +33,7 @@ module.exports = function(app) {
 	var localAllArticlesId, localAllMessageId;
 
 	app.get('/', function(req, res) {
-		res.render('myBlog-slide');
+		res.render('LoginAndRegister/myBlog-slide');
 	});
 
 	app.get('/myBlog-login', function(req, res) {
@@ -42,7 +42,7 @@ module.exports = function(app) {
 			res.redirect('/myBlog-index');
 		}
 		else {
-			res.render('myBlog-login', 
+			res.render('LoginAndRegister/myBlog-login', 
 				{successMessage: req.flash('success'), 
 				 errorMessage: req.flash('loginFailed')
 			});
@@ -84,7 +84,7 @@ module.exports = function(app) {
 	});
 
 	app.get('/myBlog-register', function(req, res) {
-		res.render('myBlog-register', {errorMessage: req.flash('registerError')});
+		res.render('LoginAndRegister/myBlog-register', {errorMessage: req.flash('registerError')});
 	});
 	app.post('/myBlog-register', function(req, res) {
 		if (req.body.password !== req.body.passwordConfirm) {
@@ -108,14 +108,14 @@ module.exports = function(app) {
 
 	app.get('/myBlog-index', function(req, res) {
 		judgeIfTimeOut(req, res, function() {
-			res.render('myBlog-index', 
+			res.render('index/myBlog-index', 
 				{imageSrc: req.session.imageSrc, username: req.session.username});
 		});
 	});
 
 	app.get('/myBlog-upload-image', function(req, res)  {
 		judgeIfTimeOut(req, res, function() {
-			res.render('myBlog-upload-image', {imageSrc: req.session.imageSrc});
+			res.render('index/myBlog-upload-image', {imageSrc: req.session.imageSrc});
 		});
 	});
 	app.post('/myBlog-upload-image',uploadImage.single('uploadImage'), function (req, res) {
@@ -134,7 +134,7 @@ module.exports = function(app) {
 
 	app.get('/myBlog-change-password', function(req, res) {
 		judgeIfTimeOut(req, res, function() {
-			res.render('myBlog-change-password', {errorMessage: req.flash('errorMessage'), value: req.session.username});
+			res.render('index/myBlog-change-password', {errorMessage: req.flash('errorMessage'), value: req.session.username});
 		});
 	});
 	app.post('/myBlog-change-password', function(req, res) {
@@ -175,7 +175,7 @@ module.exports = function(app) {
 				localAllArticlesId: localAllArticlesId
 			};
 			users.articlesEvent('findAllArticles', data, function() {
-				res.render('myBlog-article', 
+				res.render('article/myBlog-article', 
 					{imageSrc: req.session.imageSrc, username:req.session.username, articles: data.articles});
 			});
 		});
@@ -183,7 +183,7 @@ module.exports = function(app) {
 
 	app.get('/myBlog-edit-article', function(req, res) {
 		judgeIfTimeOut(req, res, function() {
-			res.render('myBlog-edit-article');
+			res.render('article/myBlog-edit-article');
 		});
 	});
 	app.post('/myBlog-edit-article', uploadImage.array('uploadPicture'), function(req, res) {
@@ -212,7 +212,7 @@ module.exports = function(app) {
 		var data = {articleId: articleId};
 		users.articlesEvent('findArticle', data, function(article) {
 			console.log('article.pictureArray:' + article.pictureArray);
-			res.render('myBlog-readall', {article: article});
+			res.render('article/myBlog-readall', {article: article});
 		});
 
 	});
@@ -229,9 +229,18 @@ module.exports = function(app) {
 
 	app.get('/myBlog-album', function(req, res) {
 		judgeIfTimeOut(req, res, function() {
-			res.render('myBlog-album');
-	});
+			res.render('album/myBlog-album');
 		});
+	});
+	app.post('/myBlog-album', function(req, res) {});
+
+	app.get('/myBlog-single-album', function(req,res) {});
+
+	app.get('/myBlog-add-album', function(req, res) {
+		judgeIfTimeOut(req, res, function() {
+			res.render('album/myBlog-add-album');
+		});
+	});
 
 	app.get('/myBlog-message-book', function(req, res) {
 		judgeIfTimeOut(req, res, function() {
@@ -242,7 +251,7 @@ module.exports = function(app) {
 			//console.log('localAllMessageId:' + localAllMessageId);
 			users.messageBooksEvent('findAllMessage', data, function() {
 				console.log('allMessage:' + data.allMessage);
-				res.render('myBlog-message-book', {messageBooks: data.allMessage});
+				res.render('message/myBlog-message-book', {messageBooks: data.allMessage});
 			});
 		});
 	});
