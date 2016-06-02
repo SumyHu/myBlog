@@ -229,7 +229,7 @@ module.exports = function(app) {
 
 	app.get('/myBlog-album', function(req, res) {
 		judgeIfTimeOut(req, res, function() {
-			res.render('album/myBlog-album');
+			res.render('album/myBlog-album', {imageSrc: req.session.imageSrc});
 		});
 	});
 	app.post('/myBlog-album', function(req, res) {});

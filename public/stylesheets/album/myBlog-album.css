@@ -71,23 +71,15 @@
 }
 .picture-top-left {
 	border-top-left-radius: 30px;
-	background: url(../../images/girl.jpg) top left;
-	background-size: 300px 300px;
 }
 .picture-top-right {
 	border-top-right-radius: 30px;
-	background: url(../../images/girl.jpg) top right;
-	background-size: 300px 300px;
 }
 .picture-bottom-left {
 	border-bottom-left-radius: 30px;
-	background: url(../../images/girl.jpg) bottom left;
-	background-size: 300px 300px;
 }
 .picture-bottom-right {
 	border-bottom-right-radius: 30px;
-	background: url(../../images/girl.jpg) bottom right;
-	background-size: 300px 300px;
 }
 
 @-webkit-keyframes animation_picture {
@@ -137,7 +129,7 @@
 	background-color: #fff !important;
 }
 .album {
-	background: url(../../images/girl.jpg) no-repeat center center;
+	background: url(../../images/no-picture.jpg) no-repeat center center;
 	background-size: 230px 230px;
 }
 .add-album {
