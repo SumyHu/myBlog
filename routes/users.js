@@ -44,10 +44,6 @@ users.saveUsers = function(usersId, password, callback) {
 	});
 	//users.markModified('articles');
 	newUser.save(function(err) {
-		if (err) {
-			throw Error('something error happened');
-		}
-
 		return callback(err);
 	});
 };

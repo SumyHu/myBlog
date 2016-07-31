@@ -12,7 +12,7 @@ var $slider = $(".slider"),
   animating = false,
   animTime = 500,
   autoSlideTimeout,
-  autoSlideDelay = 6000,
+  autoSlideDelay = 2000,
   $pagination = $(".slider-pagi");
 
 var animation = {
